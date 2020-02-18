@@ -1,5 +1,5 @@
 # GRAU-G
-GRÀFICS FIB UPC
+GRÀFICS FIB UPC Q1-2019-2020
 
 Penjo tots els exercícis de lab que tinc fets.
 
