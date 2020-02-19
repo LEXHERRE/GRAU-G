@@ -1,0 +1,15 @@
+Environment
+VMODELS =  /assig/grau-g/models
+VTEXTURES =  /assig/grau-g/Textures
+VTESTS =  /assig/grau-g/tests
+about to execute: /dades/alex.herrero.pons/linux/G/Lab/2-plugins/NewViewer_52d9d92/viewer/bin/viewer
+OpenGL Version: 3.3
+OpenGL Profile: Core
+Loaded plugin:  "/dades/alex.herrero.pons/linux/G/Lab/2-plugins/NewViewer_52d9d92/plugins/bin/libnavigatedefault.so"
+Loaded plugin:  "/dades/alex.herrero.pons/linux/G/Lab/2-plugins/NewViewer_52d9d92/plugins/bin/librenderdefault.so"
+Loaded plugin:  "/dades/alex.herrero.pons/linux/G/Lab/2-plugins/NewViewer_52d9d92/plugins/bin/libdrawvbong.so"
+Loaded plugin:  "/dades/alex.herrero.pons/linux/G/Lab/2-plugins/NewViewer_52d9d92/plugins/bin/libpluginloader.so"
+initialized graceTime to 2500
+Cannot load MTL file /assig/grau-g/models/default-notexcoord.mtl
+About to try to compute texture coordinates per vertex to complete the model.
+Added object: default.obj (/assig/grau-g/models/default.obj)
