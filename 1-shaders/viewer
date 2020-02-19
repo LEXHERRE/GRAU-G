@@ -1,0 +1,28 @@
+#!/bin/bash
+export VEDITOR=kate
+export VMODELS=/assig/grau-g/models
+export VTEXTURES=/assig/grau-g/Textures
+export VTESTS=/assig/grau-g/tests
+export LC_NUMERIC="C"
+export VPLUGINS="libdrawvbong.so;libshaderloader.so;libnavigatedefault.so"
+VGLRUN=""
+VGLARGS=""
+if [ X$1 == 'X-vgl' ]; then
+    if [ -x /usr/bin/vglrun ]; then
+	VGLRUN="/usr/bin/vglrun"
+	VGLARGS=" +sync +sp "
+    fi
+fi
+
+if [ `uname -m` == "x86_64" ]; then
+    echo Running on a 64b platform
+    export VIMAGE=eog
+    export LD_LIBRARY_PATH=/assig/grau-g/v64new/viewer/bin
+    echo ${VGLRUN} ${VGLARGS}  /assig/grau-g/v64new/viewer/bin/viewer
+    ${VGLRUN} /assig/grau-g/v64new/viewer/bin/viewer
+else
+    echo Running on a 32b platform
+    export VIMAGE=firefox
+    export LD_LIBRARY_PATH=/assig/grau-g/v32/viewer/bin
+    /assig/grau-g/v32/viewer/bin/viewer
+fi
